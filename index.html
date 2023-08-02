@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game BOV - Team 4 TRS501</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Battle Of Vocabulary</h1>
+    <div id="round">Round: 0 </div>
+    <div id="player-turn">Playerturn: 1</div>
+    <div id="character">
+        <img src="images/animationsamira.png" alt="Character Sprite Sheet">
+      </div>
+      
+      <button onclick="startAnimation()">Start Animation</button>
+      <button onclick="stopAnimation()">Stop Animation</button>
+      
+    <div id="notification-container">
+    </div>
+    <div id="score-container">
+        <div id="player1-HP">Player 1: 100 (ATK 30, DEF:10) </div>
+        <div id="player2-HP">Player 2: 100 (ATK 30, DEF:10) </div>
+    </div>
+    <div id="score-container">
+        <div class="health-bar"> 
+            <div id="health1"></div>
+        </div>
+        <div class="health-bar"> 
+            <div id="health2"></div>
+        </div>
+    </div>
+
+    <audio id="correctSound">
+        <source src="sound/correct sound.mp3" type="audio/mpeg">
+      </audio>
+      
+      <audio id="incorrectSound">
+        <source src="sound/wrong sound.mp3" type="audio/mpeg">
+    </audio>
+    <div class="character-container">
+        <img src="images/char1.png" alt="Character 1">
+    <table id="table"> 
+        <tr>
+            <td onclick="showQuestion()">1</td>
+            <td onclick="showQuestion()">2</td>
+            <td onclick="showQuestion()">3</td>
+            <td onclick="showQuestion()">4</td>
+        </tr>
+        <tr>
+            <td onclick="showQuestion()">5</td>
+            <td onclick="showQuestion()">6</td>
+            <td onclick="showQuestion()">7</td>
+            <td onclick="showQuestion()">8</td>
+        </tr>
+        <tr>
+            <td onclick="showQuestion()">9</td>
+            <td onclick="showQuestion()">10</td>
+            <td onclick="showQuestion()">11</td>
+            <td onclick="showQuestion()">12</td>
+        </tr>
+        <tr>
+            <td onclick="showQuestion()">13</td>
+            <td onclick="showQuestion()">14</td>
+            <td onclick="showQuestion()">15</td>
+            <td onclick="showQuestion()">16</td>
+        </tr>
+    </table>
+    <img src="images/char2.png" alt="Character 2">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
